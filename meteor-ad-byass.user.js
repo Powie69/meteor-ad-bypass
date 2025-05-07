@@ -2,17 +2,20 @@
 // @name         Metoer ad bypass
 // @source       https://github.com/Powie69/meteor-ad-bypass
 // @namespace    http://tampermonkey.net/
-// @version      0.1.0
+// @version      0.1.1
 // @description  Bypasses the ad page. redirects you to the download page instantly.
 // @author       Powie69
 // @match        https://meteorclient.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=meteorclient.com
+// @run-at       document-end
+// @updateURL    https://github.com/Powie69/meteor-ad-bypass/raw/refs/heads/main/meteor-ad-bypass.min.user.js
+// @downloadURL  https://github.com/Powie69/meteor-ad-bypass/raw/refs/heads/main/meteor-ad-bypass.min.user.js
+// @supportURL   https://github.com/Powie69/meteor-ad-bypass/issues
 // @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
-
 
     function replaceLink() {
         if (window.location.pathname !== "/") return;
