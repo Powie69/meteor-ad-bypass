@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Metoer ad bypass
+// @name         Meteor ad bypass
 // @source       https://github.com/Powie69/meteor-ad-bypass
 // @namespace    http://tampermonkey.net/
-// @version      0.1.1
+// @version      0.1.2
 // @description  Bypasses the ad page. redirects you to the download page instantly.
 // @author       Powie69
 // @match        https://meteorclient.com/
