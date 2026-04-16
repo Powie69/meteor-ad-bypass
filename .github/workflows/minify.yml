@@ -23,7 +23,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run mini:stdout > meteor-ad-bypass.min.user.js
+      - run: npm run mini:stdout --silent > meteor-ad-bypass.min.user.js
 
       - uses: actions/upload-artifact@v4
         with:
