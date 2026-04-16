@@ -16,8 +16,8 @@
   "type": "commonjs",
   "main": "meteor-ad-bypass.user.js",
   "scripts": {
-    "mini": "npx UglifyJs -c -m --comments all -o meteor-ad-bypass.min.user.js -- meteor-ad-bypass.user.js",
-    "mini:stdout": "npx UglifyJs -c -m --comments all -- meteor-ad-bypass.user.js"
+    "mini": "npx uglify-js -c -m --comments all -o meteor-ad-bypass.min.user.js -- meteor-ad-bypass.user.js",
+    "mini:stdout": "npx uglify-js -c -m --comments all -- meteor-ad-bypass.user.js"
   },
   "dependencies": {
     "uglify-js": "^3.19.3"
