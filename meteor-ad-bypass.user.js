@@ -13,4 +13,19 @@
 // @supportURL   https://github.com/Powie69/meteor-ad-bypass/issues
 // @grant        none
 // ==/UserScript==
-(()=>{function e(){"/"===window.location.pathname&&(document.querySelector('a[href="https://adfoc.us/81926897739205"]').removeAttribute("target"),document.querySelector('a[href="https://adfoc.us/81926897739205"]').href="/api/download",console.log("%cEpic hack successful 😎","color: green; font-size: 4.209rem;"),console.log("%chttps://github.com/Powie69/meteor-ad-bypass","font-size: 1.333rem;"))}e(),new MutationObserver(e).observe(document.body,{childList:!0,subtree:!0})})();
+
+(function() {
+    'use strict';
+
+    function replaceLink() {
+        if (window.location.pathname !== "/") return;
+        document.querySelector('a[href="https://adfoc.us/81926897739205"]').removeAttribute('target');
+        document.querySelector('a[href="https://adfoc.us/81926897739205"]').href = '/api/download';
+        console.log('%cEpic hack successful 😎', 'color: green; font-size: 4.209rem;');
+        console.log('%chttps://github.com/Powie69/meteor-ad-bypass', 'font-size: 1.333rem;')
+    }
+
+    replaceLink();
+
+    new MutationObserver(replaceLink).observe(document.body, { childList: true, subtree: true });
+})();

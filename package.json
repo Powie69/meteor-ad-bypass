@@ -1,0 +1,25 @@
+{
+  "name": "meteor-ad-bypass",
+  "version": "0.0.0",
+  "description": "<h1 align=\"center\">Meteor Ad bypass</h1>",
+  "homepage": "https://github.com/Powie69/meteor-ad-bypass#readme",
+  "bugs": {
+    "url": "https://github.com/Powie69/meteor-ad-bypass/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Powie69/meteor-ad-bypass.git"
+  },
+  "license": "ISC",
+  "private": true,
+  "author": "Powie69",
+  "type": "commonjs",
+  "main": "meteor-ad-bypass.user.js",
+  "scripts": {
+    "mini": "npx UglifyJs -c -m --comments all -o meteor-ad-bypass.min.user.js -- meteor-ad-bypass.user.js",
+    "mini:stdout": "npx UglifyJs -c -m --comments all -- meteor-ad-bypass.user.js"
+  },
+  "dependencies": {
+    "uglify-js": "^3.19.3"
+  }
+}

@@ -1,0 +1,31 @@
+name: minify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  act:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - run: npm run mini:stdout > meteor-ad-bypass.min.user.js
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: minified version
+          path: meteor-ad-bypass.min.user.js

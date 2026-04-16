@@ -9,3 +9,5 @@
 1. Install [tampermonkey](https://www.tampermonkey.net/#download) on your browser.
 
 2. Open [`meteor-ad-bypass.min.users.js`](https://github.com/Powie69/meteor-ad-bypass/raw/refs/heads/main/meteor-ad-bypass.min.user.js) and click install.
+
+If you found this useful please consider staring ⭐
